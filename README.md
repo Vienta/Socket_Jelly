@@ -1,5 +1,5 @@
 # JellyDemo
-基于boost库封装的一个socket库
+基于boost库封装的一个socket库,我在一篇[blog中](http://www.vienta.me/2016/03/28/%E5%9F%BA%E4%BA%8Eboost%E5%BA%93%E5%B0%81%E8%A3%85%E7%9A%84%E4%B8%80%E4%B8%AA%E8%B7%A8%E5%B9%B3%E5%8F%B0socket%E5%BA%93/)有介绍
 
 # About Jelly
 `Jelly`是我在实际项目实践中实现的一个跨平台的socket解决方案，它是基于C++非常著名的Boost库开发而来，非常轻量。

@@ -36,6 +36,16 @@
         //Socket断开的回调
     });
     
+    jelly->onRoute(routeName, params, [=](std::map<string, string> res) -> void {
+        //res为返回的结果
+        if (res["result"] == _msgSuccess_) {
+            
+        } else {
+            
+        }
+    });
+
+    
     return YES;
 }
 
