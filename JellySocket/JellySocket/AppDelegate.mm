@@ -1,12 +1,15 @@
 //
 //  AppDelegate.m
-//  JellyDemo
+//  JellySocket
 //
 //  Created by Vienta on 16/5/20.
 //  Copyright © 2016年 Vienta. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#include "Jelly.h"
+
+//Demo编译不通过需要到https://github.com/faithfracture/Apple-Boost-BuildScript 去跑脚本生成boost.framework库，加入进来就可以跑通
 
 @interface AppDelegate ()
 
@@ -17,6 +20,22 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    Jelly* jelly = new Jelly();
+    
+    jelly->connect("192.168.222.254", 34952, [&](string res) -> void {
+        //连接结果
+        if (res == _connectSuccess) {
+            NSLog(@"连接成功");
+        } else {
+            NSLog(@"连接失败");
+        }
+    });
+    
+    jelly->disconnect([&](string disconnectMsg) -> void {
+        //Socket断开的回调
+    });
+    
     return YES;
 }
 

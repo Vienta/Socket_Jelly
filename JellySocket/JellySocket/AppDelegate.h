@@ -1,6 +1,6 @@
 //
 //  AppDelegate.h
-//  JellyDemo
+//  JellySocket
 //
 //  Created by Vienta on 16/5/20.
 //  Copyright © 2016年 Vienta. All rights reserved.

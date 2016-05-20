@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>JellyDemo.xcscheme</key>
+		<key>JellySocket.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>B324DA7E1CEF002300B673C4</key>
+		<key>B35A7B3D1CEF0BE900D5F03F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
